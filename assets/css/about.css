@@ -1,0 +1,140 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Common
+# header
+
+
+--------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --stroke-color: #fff;
+}
+
+body {
+  font-family: Helvetica;
+  /* color: #444444; */
+  font-size: 16px;
+  line-height: 28px;
+  margin: 0;
+}
+
+a:active,
+a:hover,
+a:focus,
+a:visited,
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Helvetica;
+}
+
+.w-70 {
+  width: 70%;
+}
+.w-80{
+  width: 80%;
+}
+.h-616 {
+  height: 616px;
+}
+.h-319{
+  height: 400px;
+  object-fit: cover;
+}
+.fs-96 {
+  font-size: 96px;
+}
+
+.fs-64 {
+  font-size: 64px;
+}
+
+.fs-48 {
+  font-size: 48px;
+}
+
+.fs-40 {
+  font-size: 40px;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
+.fs-13 {
+  font-size: 13px;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.lh-40 {
+  line-height: 40px;
+}
+
+.lh-60 {
+  line-height: 60px;
+}
+
+.text-101010 {
+  color: #101010;
+}
+
+.text-DFC4F9 {
+  color: #DFC4F9;
+}
+
+.text-206FFD {
+  color: #206FFD;
+}
+
+.text-151515 {
+  color: #151515;
+}
+
+.border-DFC4F9 {
+  border-color: #DFC4F9;
+}
+*{
+    padding: 0%;
+    margin: 0%;
+}
+.about-hero{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,25,0.9), rgba(0,0,25,0.9)), url(../images/about-four.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#focus{
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    z-index: 1;
+    background: url(../images/about-four.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    border-radius: 50%;
+    top: calc(50%-140px);
+    left: calc(50%-140px);
+}

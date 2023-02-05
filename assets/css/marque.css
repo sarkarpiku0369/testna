@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    /* font-family: 'Jost', sans-serif; */
+    font-family: Helvetica;
+    margin: 0;
+}
+
+/*Marquee stile*/
+.marquee,
+.marquee_two {
+    background: #000;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding: 0;
+}
+
+.marquee .scroll,
+.marquee_two .scroll {
+    width: 100%;
+    display: flex;
+}
+
+.marquee .scroll div {
+    color: #fff;
+    font-size: 42px;
+    background: #000;
+    white-space: nowrap;
+    font-weight: 500;
+    animation: animate-marquee 80s linear infinite;
+    animation-delay: -40s;
+}
+
+.marquee_two .scroll div {
+    color: #fff;
+    font-size: 42px;
+    background: #000;
+    white-space: nowrap;
+    font-weight: 500;
+    animation: animate-marquee2 100s linear infinite;
+    animation-delay: -50s;
+}
+
+.marquee .scroll div:nth-child(2) {
+    animation: animate-marquee-2 80s linear infinite;
+    animation-delay: -80s;
+}
+
+.marquee_two .scroll div:nth-child(2) {
+    animation: animate-marquee2-2 100s linear infinite;
+    animation-delay: -100s;
+}
+
+.marquee .scroll div .category,
+.marquee_two .scroll div .category {
+    padding: 10px 30px;
+}
+
+.category {
+    font-size: 42px;
+    font-weight: 600 !important;
+    clear: both;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    line-height: 20px;
+    font-family: Helvetica;
+    -webkit-text-stroke: 1px white;
+    color: rgb(0, 0, 0);
+    text-shadow: 3px 3px 0 rgb(255, 255, 255), -1px -1px 0 rgb(255, 255, 255),rgb(255, 255, 255)px -1px 0 #000,
+        -1px 1px 0 rgb(255, 255, 255),rgb(255, 255, 255)1px 1px 0 #000;
+    transition: all 2s;
+    cursor: pointer;
+}
+
+.category a {
+    text-decoration: none;
+    -webkit-text-stroke: 1px white;
+    color: rgb(0, 0, 0);
+    text-shadow: 3px 3px 0 rgb(255, 255, 255), -1px -1px 0 rgb(255, 255, 255),rgb(255, 255, 255)px -1px 0 #000,
+        -1px 1px 0 rgb(255, 255, 255),rgb(255, 255, 255)1px 1px 0 #000;
+    transition: all 2s;
+    cursor: pointer;
+}
+
+.category:hover, .category a:hover{
+    color: rgb(255, 255, 255);
+}
+
+/*Responsive marquee*/
+@media (max-width:767px) {
+    .category {
+        font-size: 45px;
+    }
+
+    .marquee .scroll div,
+    .marquee_two .scroll div {
+        font-size: 45px;
+    }
+
+}
+
+@keyframes animate-marquee {
+    0% {
+        -moz-transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+
+    100% {
+        -moz-transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes animate-marquee-2 {
+    0% {
+        -moz-transform: translateX(0%);
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+    }
+
+    100% {
+        -moz-transform: translateX(-200%);
+        -webkit-transform: translateX(-200%);
+        transform: translateX(-200%);
+    }
+}
+
+@keyframes animate-marquee2 {
+    0% {
+        -moz-transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+
+    100% {
+        -moz-transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+}
+
+@keyframes animate-marquee2-2 {
+    0% {
+        -moz-transform: translateX(-200%);
+        -webkit-transform: translateX(-200%);
+        transform: translateX(-200%);
+    }
+
+    100% {
+        -moz-transform: translateX(0%);
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+    }
+
+}

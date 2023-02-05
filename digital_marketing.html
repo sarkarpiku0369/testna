@@ -1,0 +1,764 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- css files -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/slick.css" />
+    <link rel="stylesheet" href="assets/css/hero_carousel.css">
+    <link rel="stylesheet" href="assets/css/video.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- icon css -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- typed js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"
+        integrity="sha512-BdHyGtczsUoFcEma+MfXc71KJLv/cd+sUsUaYYf2mXpfG/PtBjNXsPo78+rxWjscxUYN2Qr2+DbeGGiJx81ifg=="
+        crossorigin="anonymous"></script>
+    <title>Digital Marketing - Brandcull</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- navbar start for desktop -->
+        <div class="desktop-navbar-wrapper d-none d-xl-block" id="nav">
+            <div class="container">
+                <div class="d-flex align-items-center justify-content-between py-4">
+                    <!-- first item -->
+                    <div class="d-flex align-items-center">
+                        <div>
+                            <a href="index.html">
+                                <img src="assets/images/Logo.png" class="img-100">
+                            </a>
+                        </div>
+                        <div>
+                            <nav class="nav ps-5">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about_us.html">About</a>
+                                </li>
+                                <li class="nav-item" onclick="collapse()">
+                                    <a class="nav-link " data-bs-toggle="collapse" href="#collapseExample" role="button"
+                                        aria-expanded="false" aria-controls="collapseExample">Services</a>
+                                </li>
+                                <li class="nav-item" onclick="collapseTwo()">
+                                    <a class="nav-link " data-bs-toggle="collapse" href="#industry" role="button"
+                                        aria-expanded="false" aria-controls="industry">Industry</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="case-study.html">Case Study</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Freebies </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Clients</a>
+                                </li>
+                            </nav>
+                        </div>
+                    </div>
+                    <!-- second item -->
+                    <div>
+                        <div class="d-flex align-items-center">
+                            <button class="btn btn-outline-dark rounded-pill px-4 py-2" type="submit"
+                                style="font-weight: 500;">
+                                Start a project <img src="assets/images/start_project_arrow.svg" class="ms-2">
+                            </button>
+                            <select class="border-0 ms-2 bg-transparent" aria-label="Default select example">
+                                <option selected>English</option>
+                                <option value="1">Bangla</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="collapse service-nav-bg" id="collapseExample">
+                            <div class="card card-body bg-transparent border-0 ">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <a href="ui.html" class="text-decoration-none d-flex flex-column align-items-center justify-content-center service">
+                                        <img src="assets/images/ui-ux-nav.png" alt="">
+                                        <div class="fs-6 fw-bold text-black">UI UX DESIGN</div>
+                                    </a>
+                                    <a href="web_dev.html" class="text-decoration-none d-flex flex-column align-items-center justify-content-center service">
+                                        <img src="assets/images/web-nav.png" alt="">
+                                        <div class="fs-6 fw-bold text-black">WEB DEVELOPMENT</div>
+                                    </a>
+                                    <a href="branding.html" class="text-decoration-none d-flex flex-column align-items-center justify-content-center service">
+                                        <img src="assets/images/brand-nav.png" alt="">
+                                        <div class="fs-6 fw-bold text-black">BRANDING</div>
+                                    </a>
+                                    <a href="digital_marketing.html" class="text-decoration-none d-flex flex-column align-items-center justify-content-center service">
+                                        <img src="assets/images/dm-nav.png" alt="">
+                                        <div class="fs-6 fw-bold text-black">DIGITAL MATKETING</div>
+                                    </a>
+                                    <a href="app_dev.html" class="text-decoration-none d-flex flex-column align-items-center justify-content-center service">
+                                        <img src="assets/images/app-nav.png" alt="">
+                                        <div class="fs-6 fw-bold text-black">APP DEVELOPMENT</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row d-none">
+                    <div class="col-md-12">
+                        <div class="collapse service-nav-bg" id="industry">
+                            <div class="card card-body bg-transparent border-0 ">
+                                <div class="d-flex align-items-center justify-content-start">
+                                    <a href="ui.html" class="text-decoration-none d-flex flex-column align-items-center justify-content-center service">
+                                        <img src="assets/images/ui-ux-nav.png" alt="">
+                                        <div class="fs-6 fw-bold text-black">UI UX DESIGN</div>
+                                    </a>
+                                    <a href="web_dev.html" class="text-decoration-none d-flex flex-column align-items-center justify-content-center service">
+                                        <img src="assets/images/web-nav.png" alt="">
+                                        <div class="fs-6 fw-bold text-black">WEB DEVELOPMENT</div>
+                                    </a>
+                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- navbar start for mobile -->
+        <div class="mobile-navbar-wrapper d-block d-xl-none" id="nav-mobile">
+            <div class="container">
+                <div class="d-flex align-items-center justify-content-between py-4">
+                    <!-- first item -->
+                    <div class="d-flex align-items-center">
+                        <div>
+                            <a href="index.html">
+                                <img src="assets/images/Logo.png" class="img-100">
+                            </a>
+                        </div>
+
+                    </div>
+                    <!-- second item -->
+                    <div class="">
+
+
+                        <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                            aria-controls="offcanvasRight">
+                            <span class="material-symbols-outlined fs-1">
+                                menu
+                            </span>
+                        </button>
+
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                            aria-labelledby="offcanvasRightLabel">
+                            <div class="offcanvas-header">
+                                <div id="offcanvasRightLabel">
+                                    <img src="assets/images/Logo.png" alt="">
+                                </div>
+                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <div>
+                                    <ul class="list-unstyled ps-0 ">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="about_us.html">About</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Careers</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="case-study.html">Case Study</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Clients</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="ui.html">Ui/UX</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="web_dev.html">Web Development</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="branding.html">Branding </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="digital_marketing.html">Digital Marketing</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="app_dev.html">App Development</a>
+                                        </li>
+                                        <li class="nav-item mt-4">
+                                            <div class="">
+                                                <button class="btn btn-outline-dark rounded-pill px-4 py-2"
+                                                    type="submit" style="font-weight: 500;">
+                                                    Start a project <img src="assets/images/start_project_arrow.svg"
+                                                        class="ms-2">
+                                                </button>
+                                                <select class="border-0 ms-2" aria-label="Default select example">
+                                                    <option selected>English</option>
+                                                    <option value="1">Bangla</option>
+                                                </select>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- navbar end for desktop -->
+        <!-- about us hero wrapper start -->
+        <!-- hero for mobile -->
+        <div class="about-hero-wrapper d-flex align-items-center">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-8">
+                        <div class="display-5 text-uppercase fw-bold mb-4">DIGITAL MARKETING</div>
+                        <div class="fs-5">Industry experience that gives you an edge. Be it retail, digital activation,
+                            or even SEO optimization, our team is fluent in helping businesses execute modern solutions
+                            on various platforms. Offering you the industry advantage to get ahead of your fiercest
+                            competitors</div>
+                    </div>
+                    <div class="col-lg-4">
+                        <img src="assets/images/digital-hero.png" class="img-fluid" alt="">
+                        <a href="#footer"
+                            class="ps-1 mt-5 d-flex align-items-center justify-content-end bounce text-decoration-none ">
+                            <img src="assets/images/lets_talk.png">
+                            <span class="fs-5 fw-bold ms-1 text-dark ">Let’s talk</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- hero wrapper end -->
+        <!-- process wrapper start -->
+        <div class="process-wrapper">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4">
+                        <img src="assets/images/dm-process.png" class="img-fluid d-none" alt="">
+                        <video src="assets/videos/digital.mp4" loop autoplay muted class="w-100 h-450 rounded-16"></video>
+
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="d-flex align-items-start mb-3">
+                            <div class="combined display-3 fw-bold">1.</div>
+                            <div class="ps-lg-5">
+                                <div class="combined display-3 fw-bold">Outcome-Driven
+                                    Campaigns</div>
+                                <div class="text-white fs-14">
+                                    By fusing creative expertise with well-planned strategy, we’ll help you bring those
+                                    ambitious ideas to life
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start mb-3">
+                            <div class="combined display-3 fw-bold">2.</div>
+                            <div class="ps-lg-5">
+                                <div class="combined display-3 fw-bold">Flexible Solutions</div>
+                                <div class="text-white fs-14">
+                                    Personalized to your unique needs. From cost-effective budgeting to multi-channel
+                                    deliverables, our solutions can adapt to what your project requires
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start">
+                            <div class="combined display-3 fw-bold">3.</div>
+                            <div class="ps-lg-5">
+                                <div class="combined display-3 fw-bold">Value-Added Expertise </div>
+                                <div class="text-white fs-14">
+                                    Offering you the industry advantage to get ahead of your fiercest competitors.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- process wrapper end -->
+
+        <div class="ui-principle-wrapper">
+            <div class="container">
+                <div class="display-5 text-center text-uppercase fw-bold mb-5">Find the perfect plan for you!</div>
+                <div class="d-flex flex-column flex-xl-row align-items-center justify-content-between">
+                    <div
+                        class="w-348 h-436 mb-5 border border-dark rounded-16 px-3 d-flex flex-column align-items-center justify-content-between">
+                        <div class="fs-4 fw-bold text-uppercase text-center py-4">starter plan</div>
+                        <div class="text-center">Perfect for Startups & SaaS businesses willing to test new ideas.
+                        </div>
+                        <div class="fs-2 text-center fw-600">$2,999/mo</div>
+                        <button class="btn btn-dark bg-black rounded-pill  px-5 py-2 " type="submit"
+                            style="font-weight: 500;">
+                            <a href="#" class="text-decoration-none text-white">Sign Up Now</a>
+                        </button>
+                        <a href="#" class="text-decoration-underline text-black text-center">Book a Call</a>
+                        <ul class="pb-3 list-unstyled">
+                            <li class="d-flex align-items-center">
+                                <span class="material-symbols-outlined">
+                                    done
+                                </span>
+                                <span>Unlimited Requests</span>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <span class="material-symbols-outlined">
+                                    done
+                                </span>
+                                <span>Unlimited Requests</span>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <span class="material-symbols-outlined">
+                                    done
+                                </span>
+                                <span>Unlimited Requests</span>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <span class="material-symbols-outlined">
+                                    done
+                                </span>
+                                <span>Unlimited Requests</span>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <span class="material-symbols-outlined">
+                                    done
+                                </span>
+                                <span>Unlimited Requests</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="position-relative">
+                        <img src="assets/images/popular.svg" class="mx-auto d-block popular" alt="">
+                        <div
+                            class="w-348 h-523 mb-5 border border-dark rounded-16 px-3 d-flex flex-column align-items-center justify-content-evenly">
+                            <div class="fs-4 fw-bold text-uppercase text-center py-4">Perfect for you</div>
+                            <div class="text-center">Perfect for Startups & SaaS businesses willing to test new ideas.
+                            </div>
+                            <div class="fs-1 text-center fw-600">$2,999/mo</div>
+                            <button class="btn btn-dark bg-black rounded-pill  px-5 py-2" type="submit"
+                                style="font-weight: 500;">
+                                <a href="#" class="text-decoration-none text-white">Sign Up Now</a>
+                            </button>
+                            <a href="#" class="text-decoration-underline text-black text-center">Book a Call</a>
+                            <ul class="pb-3 list-unstyled">
+                                <li class="d-flex align-items-center">
+                                    <span class="material-symbols-outlined">
+                                        done
+                                    </span>
+                                    <span class="fw-bold">All Design Tier Features</span>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <span class="material-symbols-outlined">
+                                        done
+                                    </span>
+                                    <span>Unlimited Requests</span>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <span class="material-symbols-outlined">
+                                        done
+                                    </span>
+                                    <span>Unlimited Requests</span>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <span class="material-symbols-outlined">
+                                        done
+                                    </span>
+                                    <span>Unlimited Requests</span>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <span class="material-symbols-outlined">
+                                        done
+                                    </span>
+                                    <span>Unlimited Requests</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div
+                        class="w-348 h-436 mb-5 border border-dark rounded-16 px-3 d-flex flex-column align-items-center justify-content-between">
+                        <div class="fs-4 fw-bold text-uppercase text-center py-4">Speacial</div>
+                        <div class="text-center">Perfect for Startups & SaaS businesses willing to test new ideas.
+                        </div>
+                        <div class="fs-2 text-center fw-600">$2,999/mo</div>
+                        <button class="btn btn-dark bg-black rounded-pill  px-5 py-2" type="submit"
+                            style="font-weight: 500;">
+                            <a href="#" class="text-decoration-none text-white">Sign Up Now</a>
+                        </button>
+                        <a href="#" class="text-decoration-underline text-black text-center">Book a Call</a>
+                        <ul class="pb-3 list-unstyled">
+                            <li class="d-flex align-items-center">
+                                <span class="material-symbols-outlined">
+                                    done
+                                </span>
+                                <span class="fw-bold">Unlimited Requests</span>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <span class="material-symbols-outlined">
+                                    done
+                                </span>
+                                <span class="fw-bold">Unlimited Requests</span>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <span class="material-symbols-outlined">
+                                    done
+                                </span>
+                                <span>Unlimited Requests</span>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <span class="material-symbols-outlined">
+                                    done
+                                </span>
+                                <span>Unlimited Requests</span>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <span class="material-symbols-outlined">
+                                    done
+                                </span>
+                                <span>Unlimited Requests</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <img src="assets/images/accept.png" class="img-fluid mx-auto d-block " alt="">
+            </div>
+        </div>
+        <!-- what'sin my mind wrapper start -->
+        <div class="ui-good-wrapper">
+            <div class="container">
+                <img src="assets/images/pink_star.png" class="pink img-fluid rotate" alt="">
+                <img src="assets/images/blue_star.png" class="blue img-fluid rotate" alt="">
+                <img src="assets/images/yellow-star.png" class="yellow-img img-fluid rotate" alt="">
+                <div class="p-md-4 pt-3">
+                    <div class="display-5 text-uppercase text-black text-center fw-bold"> Have a bigger project in mind? <br
+                            class="d-none d-lg-block">
+                        We got you!</div>
+                    <button class="btn btn-dark bg-black rounded-pill px-5 py-3 mt-5 mx-auto d-block" type="submit">
+                        <a href="#" class="text-decoration-none text-white text-uppercase">Book a Call</a>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+        <!-- testimonial start -->
+        <div class="customer-wrapper">
+            <div class="container">
+                <div class="d-flex align-items-center justify-content-center mb-4">
+                    <div class="display-3 fw-bold me-3">Sounds Good </div>
+                    <img src="assets/images/smile_love.png" alt="">
+                </div>
+                <div class="row">
+                    <!-- client 1 -->
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <div class="video-wrapper">
+                            <div class="video-container">
+                                <video id="video" preload="metadata" poster="assets/images/vid-1.png" controls>
+                                    <source src="assets/videos/hero.mp4"
+                                        type="video/mp4">
+                                </video>
+
+                                <div class="play-button-wrapper">
+                                    <div title="Play video" class="play-gif" id="circle-play-b">
+                                        <!-- SVG Play Button -->
+                                        <img src="assets/images/play.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center mt-3">
+                            <div class="fs-4">MIKE HARRY</div>
+                            <div class="fs-13">CEO, DESIGN CO. </div>
+                        </div>
+                    </div>
+                    <!-- client2 -->
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <div class="video-wrapper">
+                            <div class="video-container">
+                                <video id="video-two" preload="metadata" poster="assets/images/vid-2.png" controls>
+                                    <source src="assets/videos/hero.mp4"
+                                        type="video/mp4">
+                                </video>
+
+                                <div class="play-button-wrapper">
+                                    <div title="Play video" class="play-gif" id="circle-play-c">
+                                        <!-- SVG Play Button -->
+                                        <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80">
+                                            <path d="M40 0a40 40 0 1040 40A40 40 0 0040 0zM26 61.56V18.44L64 40z" />
+                                        </svg> -->
+                                        <img src="assets/images/play.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center mt-3">
+                            <div class="fs-4">JASSY NILE</div>
+                            <div class="fs-13">CEO, DESIGN CO. </div>
+                        </div>
+                    </div>
+                    <!-- client3  -->
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <div class="video-wrapper">
+                            <div class="video-container">
+                                <video id="video-three" preload="metadata" poster="assets/images/vid-3.png" controls>
+                                    <source src="assets/videos/hero.mp4"
+                                        type="video/mp4">
+                                </video>
+
+                                <div class="play-button-wrapper">
+                                    <div title="Play video" class="play-gif" id="circle-play-d">
+                                        <!-- SVG Play Button -->
+                                        <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80">
+                                            <path d="M40 0a40 40 0 1040 40A40 40 0 0040 0zM26 61.56V18.44L64 40z" />
+                                        </svg> -->
+                                        <img src="assets/images/play.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center mt-3">
+                            <div class="fs-4">ROBAT MIKE</div>
+                            <div class="fs-13">CEO, DESIGN CO. </div>
+                        </div>
+                    </div>
+                    <!-- client 4 -->
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <div class="video-wrapper">
+                            <div class="video-container">
+                                <!-- <video id="myVideo" preload="metadata"
+                                    poster="assets/images/vid-4.png">
+                                    <source src="//cdn.jsdelivr.net/npm/big-buck-bunny-1080p@0.0.6/video.mp4"
+                                        type="video/mp4">
+                                </video> -->
+                                <video id="myVideo" preload="metadata" poster="assets/images/vid-4.png" controls>
+                                    <source src="assets/videos/hero.mp4"
+                                        type="video/mp4">
+                                    Your browser does not support HTML5 video.
+                                </video>
+
+                                <div class="play-button-wrapper">
+                                    <div title="Play video_four" class="play-gif" id="circle-play-e">
+                                        <!-- SVG Play Button -->
+                                        <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80">
+                                            <path d="M40 0a40 40 0 1040 40A40 40 0 0040 0zM26 61.56V18.44L64 40z" />
+                                        </svg> -->
+                                        <img src="assets/images/play.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center mt-3">
+                            <div class="fs-4">SOPY NILA</div>
+                            <div class="fs-13">CEO, DESIGN CO. </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- testimonial end -->
+        <!-- contact wrapper start -->
+        <div class="contact-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 first_half position-relative">
+                        <!-- <img src="assets/images/bulb-container.png" class="bulb-img"> -->
+                        <div class="first_hallf">
+
+                            <div class="display-6 fw-bold lh-40 text-black">
+                                Let's Talk about
+                            </div>
+                            <div class="lh-60">
+                                <span class="display-6 fw-bold text-black">your </span>
+                                <span class="display-1 fw-bold text-black">growth</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="second_half flex-column">
+                            <p class="fs-6">EXCITED TO WORK/GROW WITH US?</p>
+                            <img src="assets/images/blue-logo.png" class="img-fluid">
+                            <form>
+                                <div class="mb-3 mt-5">
+                                    <label for="exampleInputEmail1" class="form-label">Name & Company</label>
+                                    <input type="text" class="form-control " id="exampleInputEmail1"
+                                        aria-describedby="emailHelp" placeholder="John Smith">
+
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">Email</label>
+                                    <input type="text" class="form-control " id="exampleInputEmail1"
+                                        aria-describedby="emailHelp" placeholder="johnsmith@email.com">
+
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">Project Budget</label>
+                                    <div class="d-flex flex-column flex-lg-row">
+                                        <label class="rad">
+                                            <input type="radio" name="product" class="card-input-element" />
+
+                                            <div class="panel panel-default card-input">
+                                                <div class="panel-body">
+                                                    Less Than $1k
+                                                </div>
+                                            </div>
+
+                                        </label>
+                                        <label class="rad">
+                                            <input type="radio" name="product" class="card-input-element" />
+
+                                            <div class="panel panel-default card-input">
+                                                <div class="panel-body">
+                                                    $1k-2k
+                                                </div>
+                                            </div>
+                                        </label>
+                                        <label class="rad">
+                                            <input type="radio" name="product" class="card-input-element" />
+
+                                            <div class="panel panel-default card-input">
+                                                <div class="panel-body">
+                                                    $2k-10k
+                                                </div>
+                                            </div>
+                                        </label>
+                                        <label class="rad">
+                                            <input type="radio" name="product" class="card-input-element" />
+
+                                            <div class="panel panel-default card-input">
+                                                <div class="panel-body">
+                                                    Monthly
+                                                </div>
+                                            </div>
+                                        </label>
+                                    </div>
+
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlTextarea1" class="form-label">Project
+                                        Description</label>
+                                    <textarea class="form-control " id="exampleFormControlTextarea1"
+                                        placeholder="Write your description here..." rows="5"></textarea>
+                                </div>
+
+                                <button type="submit" class="btn btn-dark rounded-pill px-5 py-2 mt-4">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- contact wrapper end -->
+        <!-- footer start -->
+        <footer class="footer-wrapper" id="footer">
+            <div class="container">
+                <div class="">
+                    <div class="row align-items-center">
+                        <div class="col-lg-4 mb-3">
+                            <img src="assets/images/white_logo.png" class="img-fluid mb-4">
+                        </div>
+                        <div class="col-lg-8 mb-3">
+                            <div class="row border-bottom border-white pb-3">
+                                <div class="col-lg-3 col-md-6 mb-4">
+                                    <div class="d-flex align-items-center pb-3">
+                                        <img src="assets/images/usa.png" class="img-fluid me-3">
+                                        <div class="fs-6 text-white ">USA</div>
+                                    </div>
+                                    <div class="fs-14 text-white pb-1">alma.lawson@example.com</div>
+                                    <div class="fs-14 text-white">(406) 555-0120</div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 mb-4">
+                                    <div class="d-flex align-items-center pb-3">
+                                        <img src="assets/images/canada.png" class="img-fluid me-3">
+
+                                        <div class="fs-6 text-white ">CA</div>
+                                    </div>
+                                    <div class="fs-14 text-white pb-1">alma.lawson@example.com</div>
+                                    <div class="fs-14 text-white">(406) 555-0120</div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 mb-4">
+                                    <div class="d-flex align-items-center  pb-3">
+                                        <img src="assets/images/ger.png" class="img-fluid me-3">
+
+                                        <div class="fs-6 text-white ">GER</div>
+                                    </div>
+                                    <div class="fs-14 text-white pb-1">alma.lawson@example.com</div>
+                                    <div class="fs-14 text-white">(406) 555-0120</div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 mb-4">
+                                    <div class="d-flex align-items-center  pb-3">
+                                        <img src="assets/images/aus.png" class="img-fluid me-3">
+
+                                        <div class="fs-6 text-white ">AU</div>
+                                    </div>
+                                    <div class="fs-14 text-white pb-1">alma.lawson@example.com</div>
+                                    <div class="fs-14 text-white">(406) 555-0120</div>
+                                </div>
+                            </div>
+                            <div class="row mt-4 align-items-md-center">
+                                <div class="col-md-8 mb-4">
+                                    <ul class="nav">
+                                        <li class="nav-item">
+                                            <a class="nav-link fs-14 text-white ps-0 ms-0" href="#">Blogs</a>
+                                        </li>
+                                        <li class="nav-item ms-md-3">
+                                            <a class="nav-link fs-14 text-white" href="#">Careers</a>
+                                        </li>
+                                        <li class="nav-item ms-md-3">
+                                            <a class="nav-link fs-14 text-white" href="#">Terms</a>
+                                        </li>
+                                        <li class="nav-item ms-md-3">
+                                            <a class="nav-link fs-14 text-white  ">Privacy</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="d-flex justify-content-md-end align-items-md-center">
+                                        <img src="assets/images/foot_fb.png" class="me-3" width="20" alt="">
+                                        <img src="assets/images/foot_skype.png" class="me-3" width="20" alt="">
+                                        <img src="assets/images/foot_ins.png" class="me-3" width="20" alt="">
+                                        <img src="assets/images/foot_linked.png" class="" width="20" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer end -->
+        <!-- cursor -->
+        <div class="cursor"></div>
+    </div>
+
+    <!-- slick -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <!-- slider -->
+    <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+    <script src="assets/js/scroll_nav.js"></script>
+    <script src="assets/js/hero_carousel.js"></script>
+    <script src="assets/js/typed.js"></script>
+    <!--cursor  -->
+    <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+    <script src="assets/js/cursor.js"></script>
+    <script src="assets/js/video.js"></script>
+    <script src="assets/js/index.js"></script>
+
+</body>
+
+</html>
